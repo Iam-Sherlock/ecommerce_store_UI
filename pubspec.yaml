@@ -2,7 +2,7 @@ name: ecommerce_store
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   go_router: ^15.2.0
+  provider: ^6.1.5
 
 dev_dependencies:
   flutter_test:
@@ -53,7 +54,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -62,7 +62,32 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/onboarding/collage.png
+    - assets/onboarding/home_stick.png
+    - assets/onboarding/nitendo_switch.png
+    - assets/onboarding/samsung_buds.png
     - assets/products/headphone.png
+    - assets/icons/applepay_icon.png
+    - assets/icons/back_icon.png
+    - assets/icons/fav_filled_icon.png
+    - assets/icons/fav_icon.png
+    - assets/icons/gpay_icon.png
+    - assets/icons/notification_icon.png
+    - assets/icons/paypal_icon.png
+    - assets/icons/search_icon.png
+    - assets/icons/shar_icon.png
+    - assets/icons/star_icon.png
+    - assets/products/adidas_ball.png
+    - assets/products/airpods.png
+    - assets/products/amazon.png
+    - assets/products/dell_laptop.png
+    - assets/products/headphone1.png
+    - assets/products/headphone2.png
+    - assets/products/headphone3.png
+    - assets/products/macbook_air.png
+    - assets/products/nike_shoes.png
+    - assets/products/running_shoes.png
+    - assets/products/samsung_buds.png
+    - assets/products/samsung_buds2.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

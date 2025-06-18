@@ -1,10 +1,18 @@
-import 'package:ecommerce_store/onboarding_screen.dart';
+import 'package:ecommerce_store/Favourite/Provider/favorites_provider.dart';
 import 'package:ecommerce_store/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => FavoritesProvider()),
+      ],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
