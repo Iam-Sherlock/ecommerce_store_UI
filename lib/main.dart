@@ -1,4 +1,5 @@
 import 'package:ecommerce_store/onboarding_screen.dart';
+import 'package:ecommerce_store/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,14 +13,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         textTheme: GoogleFonts.baiJamjureeTextTheme(),
+        
       ),
-      home: OnboardingScreen(),
+      routerConfig: appRouter,
     );
   }
 }

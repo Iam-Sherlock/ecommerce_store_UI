@@ -1,5 +1,6 @@
 import 'package:ecommerce_store/utils/style.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -48,7 +49,7 @@ class OnboardingScreen extends StatelessWidget {
                       ]),
                 ),
                 Padding(padding: EdgeInsets.all(8)),
-                Container(
+                DecoratedBox(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
                     color: Colors.white,
@@ -72,7 +73,40 @@ class OnboardingScreen extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(24.0),
                 child: Image.asset('assets/onboarding/collage.png'),
-              ))
+              )),
+          Positioned(
+              child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 50.0),
+              child: TextButton(
+                  onPressed: () {
+                    context.push('/home');
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: Colors.white,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8.0, vertical: 4.0),
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          'Log In',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFFFF5500),
+                              fontSize: 22),
+                        ),
+                      ),
+                    ),
+                  )),
+            ),
+          ))
         ],
       ),
     );
